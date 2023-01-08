@@ -181,7 +181,7 @@ void logo_display_on_boot() {
 void setup() {
   Wire.begin();
   pinMode(PIN_INPUT, INPUT_PULLUP);
- // logo_display_on_boot();
+  logo_display_on_boot();
   int input_button_value = digitalRead(PIN_INPUT);
   if (input_button_value == 0) usb_display();
   if (input_button_value == 0) usb_mode = true;
@@ -194,9 +194,9 @@ void setup() {
 
 
 
-  //external_eeprom.initialize();
+  external_eeprom.initialize();
   delay(1000);
-  //detect_last_address();
+  detect_last_address();
 
   // Serial.print("Current possition:");
   // Serial.println(counter);
@@ -244,7 +244,7 @@ void display_data(int counter) {
 
 
 
-  // text to display
+  //text to display
   display.display();  // show on OLED
 }
 
@@ -256,7 +256,7 @@ void loop() {
 
 
 
-    //write_last_address();
+    write_last_address();
 
 
     int data_val = (float)(analogRead(A0)) / 4;
@@ -272,14 +272,14 @@ void loop() {
 
 
 
-    //external_eeprom.writeByte(word(counter), data_val + 1);
+    external_eeprom.writeByte(word(counter), data_val + 1);
     delay(100);
-    //external_eeprom.writeByte(word(counter + 1), second_data + 1);
+    external_eeprom.writeByte(word(counter + 1), second_data + 1);
     delay(100);
-    //byte data = external_eeprom.readByte(word(counter));
+    byte data = external_eeprom.readByte(word(counter));
     // Print read byte.
     counter++;
-    //display_data(counter);
+    display_data(counter);
 
     delay(delay_in_millis);
   } else {
