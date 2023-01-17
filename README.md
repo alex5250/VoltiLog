@@ -8,6 +8,12 @@ The all software and hardware is open sources and avabile there, currently some 
 # Many thanks to:
 @misha-dig
 
+# Hardware 
+## Schematic
+![image](https://user-images.githubusercontent.com/20460747/213035296-5e5684d8-6052-43a9-aa34-5787aac51af1.png)
+##  PCB (json easyeda format comming soon)
+![image](https://user-images.githubusercontent.com/20460747/213035432-a12f778e-9b6c-4ddc-8d29-43024db2b69e.png)
+
 
 # PCB making in home
 Used toner techology not perfect,but ok with skills
