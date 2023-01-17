@@ -19,7 +19,8 @@ https://user-images.githubusercontent.com/20460747/213034062-9187a859-adef-4934-
 
 
 # Project demo 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/LSznjLQJUaE" title="Демонстрация console_panel_software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=LSznjLQJUaE"><img src="https://img.youtube.com/vi/LSznjLQJUaE/0.jpg" alt="IMAGE ALT TEXT"></a>
+
 
 
 # Software 
