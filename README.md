@@ -5,3 +5,7 @@ The second mode is when device is connected to power supply and just records dat
 The all software and hardware is open sources and avabile there, currently some manuals and software comments are in Russian and later when we will found some time we will translate them.
 
 
+# Many thanks to:
+@misha-dig
+
+
