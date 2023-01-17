@@ -11,7 +11,12 @@ The all software and hardware is open sources and avabile there, currently some 
 
 # PCB making in home
 Used toner techology not perfect,but ok with skills
-https://user-images.githubusercontent.com/20460747/213031487-345124f8-0b84-45e8-b4c8-0aedab619b45.mp4
+
+
+https://user-images.githubusercontent.com/20460747/213034062-9187a859-adef-4934-ae63-3874bf2dac39.mp4
+
+
+
 
 # Project demo 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/LSznjLQJUaE" title="Демонстрация console_panel_software" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
