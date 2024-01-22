@@ -51,7 +51,7 @@ Used libs:
 1. RibbonWinForms 
 2. Putty as alternative way to see data from com port
 3. drivinst64 for driver install
-And bunch of plain C# code. 
+
 
 # Screenshots(under wine):
 
