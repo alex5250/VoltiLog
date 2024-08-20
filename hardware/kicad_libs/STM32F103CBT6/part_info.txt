@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=STM32F103CBT6
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat Packages
+PinCount=48
+Version=3.1
+Released=2015-04-16 09:48:08
+Downloaded=2024-08-16 19:07:51
+3D=Y

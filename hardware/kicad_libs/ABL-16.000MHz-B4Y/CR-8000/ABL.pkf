@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "ABL"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "ABL")
+        (spec "default")
+    )
+)

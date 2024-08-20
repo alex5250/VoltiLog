@@ -1,0 +1,123 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "ABL-16.000MHz-B4Y"
+   (description "16MHz +/-30ppm Crystal 18pF 40 Ohms HC-49/US")
+   (family "OSC")
+   (package "ABL")
+   (attribute "Datasheet Link" "https://abracon.com/Resonators/ABL.pdf")
+   (attribute "Mouser Part Number" "815-ABL-16-B4Y")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/ABL-16.000MHz-B4Y?qs=DZ%2FvJMgWWIsyUPmWNxNaQw%3D%3D")
+   (attribute "Manufacturer_Name" "ABRACON")
+   (attribute "Manufacturer_Part_Number" "ABL-16.000MHz-B4Y")
+   (gate
+    (symbol "ABL-16.000MHz-B4Y")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "ABL-16.000MHz-B4Y"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 120 100) (pt 120 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 100) (pt 280 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 160 140) (pt 160 -140) (pt 240 -140) (pt 240 140) (pt 160 140) (closed))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 280 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 120 0) (pt 100 0))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 0) (rot 0) (mir X) (visible true))
+    (name (pt 140 10) (rot 0) (just MIDDLE LEFT) (visible false))
+    (number (pt 60 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "ABL"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.31 3.5)
+      (pt 9.19 3.5)
+      (pt 9.19 -3.5)
+      (pt -4.31 -3.5)
+      (pt -4.31 3.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.81 2.5)
+      (arc (pt -0.810 2.500) (pt -3.310 -2.500) (pt 1.690 2.500) (start 180.0) (sweep 90.0))
+      (pt -0.81 -2.5)
+      (pt 5.69 -2.5)
+      (arc (pt 5.690 -2.500) (pt 3.190 -2.500) (pt 8.190 2.500) (start 180.0) (sweep -90.0))
+      (pt 5.69 2.5)
+      (pt -0.81 2.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -0.81 2.5)
+      (arc (pt -0.810 2.500) (pt -3.310 -2.500) (pt 1.690 2.500) (start 180.0) (sweep 90.0))
+      (pt -0.81 -2.5)
+      (pt 5.69 -2.5)
+      (arc (pt 5.690 -2.500) (pt 3.190 -2.500) (pt 8.190 2.500) (start 180.0) (sweep -90.0))
+      (pt 5.69 2.5)
+      (pt -0.81 2.5))))
+   (leg 1 (pt 0.000 0.000) (padstack 0))
+   (leg 2 (pt 4.880 0.000) (padstack 2))
+   (padstack 0
+    (hole 0.657)
+    (plated true)
+    (pad (layer TCOP) (square 1.205))
+    (pad (layer INNER) (round 1.205))
+    (pad (layer BCOP) (square 1.205))
+   )
+   (padstack 2
+    (hole 0.657)
+    (plated true)
+    (pad (layer TCOP) (round 1.205))
+    (pad (layer INNER) (round 1.205))
+    (pad (layer BCOP) (round 1.205))
+   )
+   (model "ABL-16.000MHz-B4Y.stp"
+    (euler 90 0 0)
+    (offset 2.440000057220459 0 0)
+   )
+  )
+ )
+)

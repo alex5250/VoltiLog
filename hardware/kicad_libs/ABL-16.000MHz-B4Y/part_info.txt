@@ -1,0 +1,9 @@
+Manufacturer=ABRACON
+PartNumber=ABL-16.000MHz-B4Y
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=2
+Version=7.1
+Released=2019-08-02 14:02:48
+Downloaded=2024-08-16 19:06:35
+3D=Y

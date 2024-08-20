@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'STM32F103CBT6'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT", "TJ", "MTBF", "POWER", "SLOPE", "SUBTYPE", "PACKAGE", "RJA", "IOUT_MAX", "IOUT_MIN", "ICC", "IGND", "RCA", "RJC", "ICCQ", "TECHNOLOGY", "VDD_MAX", "VDD_MIN";
+{========================================================================================}
+ "STMicroelectronics", "STM32F103CBT6" (!) = "", "QFP50P900X900X160-48N", "Quad Flat Packages", "511-STM32F103CBT6", "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32F103CBT6?qs=WxFF5lh7QM3goh6GV5Ogig%3D%3D", "STM32F103CBT6, 32 bit ARM Cortex M3 , 72MHz, 128 kB ROM , 20 kB RAM USB CAN I2C, 48 LQFP", "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf", "1.6 mm", "150", "", "363m", "", "MCU SMD", "LQFP-48", "55", "25m", "25m", "150m", "", "", "", "", "CMOS_TTL", "4", "-0.3"
+END_PART
+
+END.

@@ -1,0 +1,65 @@
+(Japanese_coding: sjis)
+(function "ECS_1171968"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-08-02-14:02:48)
+    (utime 2023-05-02-09:54:00)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "ABL-16_000MHz-B4Y")
+)
+
+
+(pinAssign "ECS_1171968"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-08-02-14:02:48)
+    (utime 2023-05-02-09:54:00)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1171968")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "ABL-16_000MHz-B4Y")
+)
+
+
+(part "ABL-16_000MHz-B4Y"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-08-02-14:02:48)
+    (utime 2023-05-02-09:54:00)
+    (packageRef "ABL-16_000MHz-B4Y")
+    (pinAssignRef "ECS_1171968")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Y")
+    (property "description" "16MHz +/-30ppm Crystal 18pF 40 Ohms HC-49/US")
+    (property "Mouser_Part_Number" "815-ABL-16-B4Y")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/ABL-16.000MHz-B4Y?qs=DZ%2FvJMgWWIsyUPmWNxNaQw%3D%3D")
+    (property "Manufacturer_Name" "ABRACON")
+    (property "Manufacturer_Part_Number" "ABL-16.000MHz-B4Y")
+    (property "Datasheet_Link" "https://abracon.com/Resonators/ABL.pdf")
+)
+
+

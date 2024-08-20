@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA219BIDR
+D 26-V, Bidirectional, Zero-Drift, High-Side, I2C Out Current/Power Monitor
+K
+F https://www.ti.com/lit/ds/symlink/ina219.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1601223553719
+$ENDCMP
+#
+#End Doc Library

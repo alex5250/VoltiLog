@@ -1,0 +1,16 @@
+.ABL-16.000MHz-B4Y :1 ;16MHz +/-30ppm Crystal 18pF 40 Ohms HC-49/US
+ABL
+*STM Y
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN ABL-16.000MHz-B4Y
+~!Mouser Part Number (815-ABL-16-B4Y)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ABRACON/ABL-16.000MHz-B4Y?qs=DZ%2FvJMgWWIsyUPmWNxNaQw%3D%3D)
+~!Manufacturer_Name (ABRACON)
+~!Manufacturer_Part_Number (ABL-16.000MHz-B4Y)
+~!Link Datasheet (https://abracon.com/Resonators/ABL.pdf)
+~!Height (-)
+~!3D_Model (ABL-16.000MHz-B4Y)
+ABL-16.000MHz-B4Y
+1.1!U 2.1!U 

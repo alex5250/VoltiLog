@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ABL-16.000MHz-B4Y
+D 16MHz +/-30ppm Crystal 18pF 40 Ohms HC-49/US
+K
+F https://abracon.com/Resonators/ABL.pdf
+$ENDCMP
+#
+#End Doc Library
