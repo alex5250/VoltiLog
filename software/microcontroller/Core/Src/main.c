@@ -21,6 +21,8 @@
 #include "cmsis_os.h"
 #include "fatfs.h"
 #include "usb_device.h"
+#include "pin_definition.h"
+#include "./stm32-ssd1306/ssd1306.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -103,6 +105,7 @@ int main(void)
   MX_I2C2_Init();
   MX_USART1_UART_Init();
   MX_FATFS_Init();
+  ssd1306_TestAll();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -139,6 +142,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+
+  //HAL_GPIO_WritePin(BOOT_INDICATOR,);
   while (1)
   {
     /* USER CODE END WHILE */
@@ -329,7 +335,28 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB1 PB4 */
+  /*Configure GPIO pins :/*
+ * pin_definition.h
+ *
+ *  Created on: Aug 20, 2024
+ *      Author: alex
+ */
+
+#ifndef SRC_PIN_DEFINITION_H_
+#define SRC_PIN_DEFINITION_H_
+
+
+
+#define LEFT_BUTTON PA6
+#define RIGHT_BUTTON PA7
+#define MEMORY_CHIP_ENABLE PA4
+#define BOOT_INDICATOR PB4
+#define MEMORY_CHIP_SELECT PB1
+
+
+
+#endif /* SRC_PIN_DEFINITION_H_ */
+
   GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -349,7 +376,28 @@ static void MX_GPIO_Init(void)
   * @brief  Function implementing the defaultTask thread.
   * @param  argument: Not used
   * @retval None
+  *//*
+  * pin_definition.h
+  *
+  *  Created on: Aug 20, 2024
+  *      Author: alex
   */
+
+ #ifndef SRC_PIN_DEFINITION_H_
+ #define SRC_PIN_DEFINITION_H_
+
+
+
+ #define LEFT_BUTTON PA6
+ #define RIGHT_BUTTON PA7
+ #define MEMORY_CHIP_ENABLE PA4
+ #define BOOT_INDICATOR PB4
+ #define MEMORY_CHIP_SELECT PB1
+
+
+
+ #endif /* SRC_PIN_DEFINITION_H_ */
+
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {
@@ -369,10 +417,33 @@ void StartDefaultTask(void const * argument)
   * @note   This function is called  when TIM1 interrupt took place, inside
   * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
   * a global variable "uwTick" used as application time base.
-  * @param  htim : TIM handle
-  * @retval None
-  */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+  * @param  htim : TIM han/*
+ * pin_definition.h
+ *
+ *  Created on: Aug 20, 2024
+ *      Author: alex
+ */
+
+#ifndef SRC_PIN_DEFINITION_H_
+#define SRC_PIN_DEFINITION_H_
+
+
+
+#define LEFT_BUTTON PA6
+#define RIGHT_BUTTON PA7
+#define MEMORY_CHIP_ENABLE PA4
+#define BOOT_INDICATOR PB4
+#define MEMORY_CHIP_SELECT PB1
+
+
+
+#endif
+
+void HAL_TIM_PeriodElapsedCallback(TIM_Hand
+		/* SRC_PIN_DEFINITION_H_ */
+		  * dle
+		  * @retval None
+		  */leTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
 
