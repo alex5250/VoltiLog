@@ -5,5 +5,6 @@ Is Kicad Export of PCB look:
 ![voltage_log](https://github.com/user-attachments/assets/a82d3fd3-0a67-40fd-b81c-1c6da097f6bf)
 
 
+Real PCB look:
 
-
+![DSCF5527](https://github.com/user-attachments/assets/3aef5a05-063f-4eb3-8525-1104b7a3a5ee)
