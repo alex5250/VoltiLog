@@ -10,5 +10,8 @@ Real PCB look:
 ![DSCF5527](https://github.com/user-attachments/assets/3aef5a05-063f-4eb3-8525-1104b7a3a5ee)
 
 
-UI: Idea
+UI: Idea  
 ![image](https://github.com/user-attachments/assets/9cb32e41-5f6c-45f6-a16d-20a00087366d)
+
+![image](https://github.com/user-attachments/assets/58b57c1c-ab1d-4c1b-9187-8ea775889666)
+
