@@ -13,5 +13,6 @@ Real PCB look:
 UI: Idea  
 ![image](https://github.com/user-attachments/assets/9cb32e41-5f6c-45f6-a16d-20a00087366d)
 
-![image](https://github.com/user-attachments/assets/58b57c1c-ab1d-4c1b-9187-8ea775889666)
+![image](https://github.com/user-attachments/assets/c8b1667d-6197-4e37-a1a9-4804539c1b68)
+
 
