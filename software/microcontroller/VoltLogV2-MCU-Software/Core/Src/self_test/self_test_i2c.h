@@ -4,7 +4,7 @@
 #include "stm32f1xx_hal.h"
 
 /* Function prototypes */
-void uart_send_message(char *msg);
+void uart_send_message(char* msg);
 void scan_I2C_bus(void);
 
 #endif /* SELF_TEST_I2C_H */

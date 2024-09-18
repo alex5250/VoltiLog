@@ -8,48 +8,41 @@
 #include "../ssd1306/ssd1306_fonts.h"
 #include <stdbool.h>
 #include <stdio.h>
-void draw_main_screen(float voltage, float current, int memory_percentage, bool is_recording) {
-    ssd1306_Fill(Black);
+void draw_main_screen(int voltage, int current, int memory_percentage, bool is_recording)
+{
+    // ssd1306_Fill(Black);
 
     // Display Voltage
     ssd1306_SetCursor(5, 5);
     ssd1306_WriteString("Voltage:", Font_7x10, White);
     char voltage_str[10];
-    sprintf(voltage_str, "%.2fV", voltage);  // Format voltage with 2 decimal points
+    sprintf(voltage_str, "%d mV", voltage); // Format voltage with 2 decimal points
     ssd1306_SetCursor(75, 5);
-    ssd1306_WriteString(voltage_str, Font_11x18, White);
+    ssd1306_WriteString(voltage_str, Font_7x10, White);
 
     // Display Current
     ssd1306_SetCursor(5, 25);
     ssd1306_WriteString("Current:", Font_7x10, White);
     char current_str[10];
-    sprintf(current_str, "%.3fA", current);  // Format current with 3 decimal points
+    sprintf(current_str, "%d mA", current); // Format current with 3 decimal points
     ssd1306_SetCursor(75, 25);
-    ssd1306_WriteString(current_str, Font_11x18, White);
+    ssd1306_WriteString(current_str, Font_7x10, White);
 
     // Display Memory taken
     ssd1306_SetCursor(5, 45);
     ssd1306_WriteString("Memory taken:", Font_7x10, White);
     char memory_str[10];
-    sprintf(memory_str, "%d%%", memory_percentage);  // Format memory as percentage
+    sprintf(memory_str, "%d%%", memory_percentage); // Format memory as percentage
     ssd1306_SetCursor(95, 45);
-    ssd1306_WriteString(memory_str, Font_11x18, White);
+    ssd1306_WriteString(memory_str, Font_7x10, White);
 
     // Display Recording Status
-    ssd1306_SetCursor(5, 65);
-    if (is_recording) {
-        ssd1306_WriteString("Recording", Font_7x10, White);
-        ssd1306_DrawCircle(100, 70, 3, White);  // Recording indicator circle
-    } else {
-        ssd1306_WriteString("Not recording", Font_7x10, White);
-    }
 
     ssd1306_UpdateScreen();
 }
 
-
-
-void draw_settings_screen(int sample_rate, int sample_amount, int shunt_calibration) {
+void draw_settings_screen(int sample_rate, int sample_amount, int shunt_calibration)
+{
     ssd1306_Fill(Black);
 
     // Display Sample rate
@@ -86,4 +79,3 @@ void draw_settings_screen(int sample_rate, int sample_amount, int shunt_calibrat
 
     ssd1306_UpdateScreen();
 }
-

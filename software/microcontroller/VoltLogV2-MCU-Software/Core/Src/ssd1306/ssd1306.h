@@ -8,14 +8,13 @@
 #ifndef __SSD1306_H__
 #define __SSD1306_H__
 
+#include <_ansi.h>
 #include <stddef.h>
 #include <stdint.h>
-#include <_ansi.h>
 
 _BEGIN_STD_C
 
 #include "ssd1306_conf.h"
-
 
 #if defined(STM32WB)
 #include "stm32wbxx_hal.h"
@@ -48,7 +47,6 @@ _BEGIN_STD_C
 #error "SSD1306 library was tested only on STM32F0, STM32F1, STM32F3, STM32F4, STM32F7, STM32L0, STM32L1, STM32L4, STM32H7, STM32G0, STM32G4, STM32WB MCU families. Please modify ssd1306.h if you know what you are doing. Also please send a pull request if it turns out the library works on other MCU's as well!"
 #endif
 
-
 #ifdef SSD1306_X_OFFSET
 #define SSD1306_X_OFFSET_LOWER (SSD1306_X_OFFSET & 0x0F)
 #define SSD1306_X_OFFSET_UPPER ((SSD1306_X_OFFSET >> 4) & 0x07)
@@ -60,11 +58,11 @@ _BEGIN_STD_C
 /* vvv I2C config vvv */
 
 #ifndef SSD1306_I2C_PORT
-#define SSD1306_I2C_PORT        hi2c2
+#define SSD1306_I2C_PORT hi2c2
 #endif
 
 #ifndef SSD1306_I2C_ADDR
-#define SSD1306_I2C_ADDR        (0x3C << 1)
+#define SSD1306_I2C_ADDR (0x3C << 1)
 #endif
 
 /* ^^^ I2C config ^^^ */
@@ -72,28 +70,28 @@ _BEGIN_STD_C
 /* vvv SPI config vvv */
 
 #ifndef SSD1306_SPI_PORT
-#define SSD1306_SPI_PORT        hspi2
+#define SSD1306_SPI_PORT hspi2
 #endif
 
 #ifndef SSD1306_CS_Port
-#define SSD1306_CS_Port         GPIOB
+#define SSD1306_CS_Port GPIOB
 #endif
 #ifndef SSD1306_CS_Pin
-#define SSD1306_CS_Pin          GPIO_PIN_12
+#define SSD1306_CS_Pin GPIO_PIN_12
 #endif
 
 #ifndef SSD1306_DC_Port
-#define SSD1306_DC_Port         GPIOB
+#define SSD1306_DC_Port GPIOB
 #endif
 #ifndef SSD1306_DC_Pin
-#define SSD1306_DC_Pin          GPIO_PIN_14
+#define SSD1306_DC_Pin GPIO_PIN_14
 #endif
 
 #ifndef SSD1306_Reset_Port
-#define SSD1306_Reset_Port      GPIOA
+#define SSD1306_Reset_Port GPIOA
 #endif
 #ifndef SSD1306_Reset_Pin
-#define SSD1306_Reset_Pin       GPIO_PIN_8
+#define SSD1306_Reset_Pin GPIO_PIN_8
 #endif
 
 /* ^^^ SPI config ^^^ */
@@ -108,27 +106,27 @@ extern SPI_HandleTypeDef SSD1306_SPI_PORT;
 
 // SSD1306 OLED height in pixels
 #ifndef SSD1306_HEIGHT
-#define SSD1306_HEIGHT          64
+#define SSD1306_HEIGHT 64
 #endif
 
 // SSD1306 width in pixels
 #ifndef SSD1306_WIDTH
-#define SSD1306_WIDTH           128
+#define SSD1306_WIDTH 128
 #endif
 
 #ifndef SSD1306_BUFFER_SIZE
-#define SSD1306_BUFFER_SIZE   SSD1306_WIDTH * SSD1306_HEIGHT / 8
+#define SSD1306_BUFFER_SIZE SSD1306_WIDTH* SSD1306_HEIGHT / 8
 #endif
 
 // Enumeration for screen colors
 typedef enum {
     Black = 0x00, // Black color, no pixel
-    White = 0x01  // Pixel is set. Color depends on OLED
+    White = 0x01 // Pixel is set. Color depends on OLED
 } SSD1306_COLOR;
 
 typedef enum {
     SSD1306_OK = 0x00,
-    SSD1306_ERR = 0x01  // Generic error.
+    SSD1306_ERR = 0x01 // Generic error.
 } SSD1306_Error_t;
 
 // Struct to store transformations
@@ -146,10 +144,10 @@ typedef struct {
 
 /** Font */
 typedef struct {
-	const uint8_t width;                /**< Font width in pixels */
-	const uint8_t height;               /**< Font height in pixels */
-	const uint16_t *const data;         /**< Pointer to font data array */
-    const uint8_t *const char_width;    /**< Proportional character width in pixels (NULL for monospaced) */
+    const uint8_t width; /**< Font width in pixels */
+    const uint8_t height; /**< Font height in pixels */
+    const uint16_t* const data; /**< Pointer to font data array */
+    const uint8_t* const char_width; /**< Proportional character width in pixels (NULL for monospaced) */
 } SSD1306_Font_t;
 
 // Procedure definitions
@@ -164,14 +162,14 @@ void ssd1306_Line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, SSD1306_COLOR 
 void ssd1306_DrawArc(uint8_t x, uint8_t y, uint8_t radius, uint16_t start_angle, uint16_t sweep, SSD1306_COLOR color);
 void ssd1306_DrawArcWithRadiusLine(uint8_t x, uint8_t y, uint8_t radius, uint16_t start_angle, uint16_t sweep, SSD1306_COLOR color);
 void ssd1306_DrawCircle(uint8_t par_x, uint8_t par_y, uint8_t par_r, SSD1306_COLOR color);
-void ssd1306_FillCircle(uint8_t par_x,uint8_t par_y,uint8_t par_r,SSD1306_COLOR par_color);
-void ssd1306_Polyline(const SSD1306_VERTEX *par_vertex, uint16_t par_size, SSD1306_COLOR color);
+void ssd1306_FillCircle(uint8_t par_x, uint8_t par_y, uint8_t par_r, SSD1306_COLOR par_color);
+void ssd1306_Polyline(const SSD1306_VERTEX* par_vertex, uint16_t par_size, SSD1306_COLOR color);
 void ssd1306_DrawRectangle(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, SSD1306_COLOR color);
 void ssd1306_FillRectangle(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, SSD1306_COLOR color);
 
 /**
  * @brief Invert color of pixels in rectangle (include border)
- * 
+ *
  * @param x1 X Coordinate of top left corner
  * @param y1 Y Coordinate of top left corner
  * @param x2 X Coordinate of bottom right corner
