@@ -80,11 +80,7 @@ static eButtonEvent getButtonEvent(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
         button_event = SINGLE_PRESS;
     }
     // Handle long press detection
-    else if (!long_press_pending && button_down && (now - button_down_ts > LONG_MILLIS_MIN)) {
-        button_event = LONG_PRESS;
-        long_press_pending = false;
-        double_pending = false;
-    }
+
 
     return button_event;
 }

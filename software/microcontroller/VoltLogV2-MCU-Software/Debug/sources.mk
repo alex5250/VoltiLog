@@ -25,6 +25,7 @@ SUBDIRS := \
 Core/Src/button_api \
 Core/Src \
 Core/Src/ina219 \
+Core/Src/m24m02_eeprom \
 Core/Src/self_test \
 Core/Src/ssd1306 \
 Core/Src/ui \

@@ -8,6 +8,7 @@
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32f1xx.o"
 "./Core/Src/ina219/ina219.o"
+"./Core/Src/m24m02_eeprom/m24m02_eeprom.o"
 "./Core/Src/self_test/self_test_i2c.o"
 "./Core/Src/ssd1306/ssd1306.o"
 "./Core/Src/ssd1306/ssd1306_fonts.o"

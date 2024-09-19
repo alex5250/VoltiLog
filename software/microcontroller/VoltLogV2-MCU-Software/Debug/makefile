@@ -26,6 +26,7 @@ RM := rm -rf
 -include Core/Src/ui/subdir.mk
 -include Core/Src/ssd1306/subdir.mk
 -include Core/Src/self_test/subdir.mk
+-include Core/Src/m24m02_eeprom/subdir.mk
 -include Core/Src/ina219/subdir.mk
 -include Core/Src/button_api/subdir.mk
 -include Core/Src/subdir.mk
@@ -77,8 +78,8 @@ all: main-build
 main-build: VoltLogV2-MCU-Software.elf secondary-outputs
 
 # Tool invocations
-VoltLogV2-MCU-Software.elf VoltLogV2-MCU-Software.map: $(OBJS) $(USER_OBJS) /home/alex/STM32CubeIDE/workspace_1.16.0/VoltLogV2-MCU-Software/STM32F103CBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "VoltLogV2-MCU-Software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/alex/STM32CubeIDE/workspace_1.16.0/VoltLogV2-MCU-Software/STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VoltLogV2-MCU-Software.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+VoltLogV2-MCU-Software.elf VoltLogV2-MCU-Software.map: $(OBJS) $(USER_OBJS) /home/alex/VoltiLog/software/microcontroller/VoltLogV2-MCU-Software/STM32F103CBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "VoltLogV2-MCU-Software.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/alex/VoltiLog/software/microcontroller/VoltLogV2-MCU-Software/STM32F103CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VoltLogV2-MCU-Software.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
