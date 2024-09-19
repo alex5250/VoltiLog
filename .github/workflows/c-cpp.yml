@@ -1,18 +1,13 @@
-name: C/C++ CI
-
+name: Build stm32 firmware
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-
     - uses: xanderhendriks/action-build-stm32cubeide@v10.0
       with:
         project-path: './software/microcontroller/VoltLogV2-MCU-Software'
