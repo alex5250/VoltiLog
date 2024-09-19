@@ -16,5 +16,5 @@ jobs:
     - name: configure
       run: cd "software/microcontroller/VoltLogV2-MCU-Software/Debug"
     - name: make
-      run: make -j9 all
+      run: make all
 
