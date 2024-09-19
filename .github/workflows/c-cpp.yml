@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: xanderhendriks/action-build-stm32cubeide@v10.0
       with:
-        project-path: './software/microcontroller/VoltLogV2-MCU-Software'
+        project-path: './software/microcontroller'
         project-target: 'VoltLogV2-MCU-Software'
     
 
