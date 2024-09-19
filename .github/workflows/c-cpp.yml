@@ -16,7 +16,7 @@ jobs:
     - uses: xanderhendriks/action-build-stm32cubeide@v10.0
       with:
         project-path: './software/microcontroller/VoltLogV2-MCU-Software/Debug'
-        project-target: 'VoltLog/Debug'
+        project-target: 'VoltLogV2-MCU-Software/Debug'
     
 
         
