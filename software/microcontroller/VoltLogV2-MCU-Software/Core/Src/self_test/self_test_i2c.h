@@ -1,6 +1,6 @@
 #ifndef SELF_TEST_I2C_H
 #define SELF_TEST_I2C_H
-
+#include <stdio.h>
 #include "stm32f1xx_hal.h"
 
 /* Function prototypes */

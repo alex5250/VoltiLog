@@ -10,6 +10,7 @@
 #include "stm32f1xx_hal.h"
 #include <stdbool.h>
 #include <stdint.h>
+#include <string.h>
 
 void uart_send_message(char* msg)
 {

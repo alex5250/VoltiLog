@@ -1,2 +1,0 @@
-../Core/Src/self_test/self_test_i2c.c:14:6:uart_send_message	1
-../Core/Src/self_test/self_test_i2c.c:20:6:scan_I2C_bus	3

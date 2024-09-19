@@ -1,4 +1,0 @@
-../Core/Src/button_api/button_api.c:27:13:buttonStateDebounced	2
-../Core/Src/button_api/button_api.c:42:21:getButtonEvent	7
-../Core/Src/button_api/button_api.c:89:14:getLeftButtonEvent	1
-../Core/Src/button_api/button_api.c:95:14:getRightButtonEvent	1
